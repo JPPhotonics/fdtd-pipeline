@@ -1,0 +1,83 @@
+cells:
+  crossing:
+    changed: {}
+    child: null
+    default:
+      arm:
+        function: crossing_arm
+      cross_section: xs_sc
+    full:
+      arm:
+        function: crossing_arm
+      cross_section: xs_sc
+    function_name: crossing
+    info: {}
+    info_version: 2
+    module: gdsfactory.components.crossing_waveguide
+    name: crossing
+name: crossing
+ports:
+  o1:
+    center:
+    - -4.0
+    - 0.0
+    layer:
+    - 1
+    - 0
+    name: o1
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.5
+  o2:
+    center:
+    - 0.0
+    - 4.0
+    layer:
+    - 1
+    - 0
+    name: o2
+    orientation: 90.0
+    port_type: optical
+    shear_angle: null
+    width: 0.5
+  o3:
+    center:
+    - 4.0
+    - 0.0
+    layer:
+    - 1
+    - 0
+    name: o3
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.5
+  o4:
+    center:
+    - -0.0
+    - -4.0
+    layer:
+    - 1
+    - 0
+    name: o4
+    orientation: 270.0
+    port_type: optical
+    shear_angle: null
+    width: 0.5
+settings:
+  changed: {}
+  child: null
+  default:
+    arm:
+      function: crossing_arm
+    cross_section: xs_sc
+  full:
+    arm:
+      function: crossing_arm
+    cross_section: xs_sc
+  function_name: crossing
+  info: {}
+  info_version: 2
+  module: gdsfactory.components.crossing_waveguide
+  name: crossing

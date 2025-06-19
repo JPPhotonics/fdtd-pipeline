@@ -1,0 +1,11 @@
+## folders
+**/Data/
+__pycache__/
+
+## large Lumerical files
+*.lms
+*.fsp
+*.log
+
+## large tidy3d results files
+*.hdf5

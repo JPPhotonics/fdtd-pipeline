@@ -1,0 +1,192 @@
+cells:
+  bend_euler_angle45:
+    changed:
+      angle: 45
+    child: null
+    default:
+      add_bbox: null
+      add_pins: true
+      angle: 90.0
+      cross_section: xs_sc
+      direction: ccw
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: null
+      width: null
+      with_arc_floorplan: true
+    full:
+      add_bbox: null
+      add_pins: true
+      angle: 45
+      cross_section: xs_sc
+      direction: ccw
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: null
+      width: null
+      with_arc_floorplan: true
+    function_name: bend_euler
+    info:
+      dy: 7.071
+      length: 7.961
+      radius: 10.0
+      radius_min: 6.757
+      route_info:
+        length: 7.961
+        n_bend_90: 0.5
+        type: xs_sc
+        weight: 7.961
+        xs_sc_length: 7.961
+      width: 0.5
+    info_version: 2
+    module: gdsfactory.components.bend_euler
+    name: bend_euler_angle45
+  bend_euler_s_angle45:
+    changed:
+      angle: 45
+    child: null
+    default: {}
+    full:
+      angle: 45
+    function_name: bend_euler_s
+    info:
+      length: 15.922
+    info_version: 2
+    module: gdsfactory.components.bend_euler
+    name: bend_euler_s_angle45
+  mode_converter_gap0p15_length20:
+    changed:
+      gap: 0.15
+      length: 20
+    child: null
+    default:
+      bend:
+        function: bend_euler_s
+        settings:
+          angle: 45
+      coupler_straight_asymmetric:
+        function: coupler_straight_asymmetric
+      cross_section: xs_sc
+      gap: 0.3
+      length: 10
+      mc_mm_width: 1
+      mm_width: 1.2
+      sm_width: 0.5
+      taper:
+        function: taper
+      taper_length: 25
+    full:
+      bend:
+        function: bend_euler_s
+        settings:
+          angle: 45
+      coupler_straight_asymmetric:
+        function: coupler_straight_asymmetric
+      cross_section: xs_sc
+      gap: 0.15
+      length: 20
+      mc_mm_width: 1
+      mm_width: 1.2
+      sm_width: 0.5
+      taper:
+        function: taper
+      taper_length: 25
+    function_name: mode_converter
+    info: {}
+    info_version: 2
+    module: gdsfactory.components.mode_converter
+    name: mode_converter_gap0p15_length20
+name: mode_converter_gap0p15_length20
+ports:
+  o1:
+    center:
+    - -14.142
+    - 6.758
+    layer:
+    - 1
+    - 0
+    name: o1
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.5
+  o2:
+    center:
+    - -25.0
+    - 0.0
+    layer:
+    - 1
+    - 0
+    name: o2
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 1.2
+  o3:
+    center:
+    - 45.0
+    - 0.0
+    layer:
+    - 1
+    - 0
+    name: o3
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 1.2
+  o4:
+    center:
+    - 34.142
+    - 6.758
+    layer:
+    - 1
+    - 0
+    name: o4
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.5
+settings:
+  changed:
+    gap: 0.15
+    length: 20
+  child: null
+  default:
+    bend:
+      function: bend_euler_s
+      settings:
+        angle: 45
+    coupler_straight_asymmetric:
+      function: coupler_straight_asymmetric
+    cross_section: xs_sc
+    gap: 0.3
+    length: 10
+    mc_mm_width: 1
+    mm_width: 1.2
+    sm_width: 0.5
+    taper:
+      function: taper
+    taper_length: 25
+  full:
+    bend:
+      function: bend_euler_s
+      settings:
+        angle: 45
+    coupler_straight_asymmetric:
+      function: coupler_straight_asymmetric
+    cross_section: xs_sc
+    gap: 0.15
+    length: 20
+    mc_mm_width: 1
+    mm_width: 1.2
+    sm_width: 0.5
+    taper:
+      function: taper
+    taper_length: 25
+  function_name: mode_converter
+  info: {}
+  info_version: 2
+  module: gdsfactory.components.mode_converter
+  name: mode_converter_gap0p15_length20

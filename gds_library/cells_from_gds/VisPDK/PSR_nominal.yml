@@ -1,0 +1,59 @@
+cells:
+  PSR_nominal:
+    changed: {}
+    child: null
+    default: {}
+    full: {}
+    function_name: PSR_nominal
+    info: {}
+    info_version: 2
+    module: __main__
+    name: PSR_nominal
+name: PSR_nominal
+ports:
+  o1:
+    center:
+    - 1091.5
+    - 0.0
+    layer:
+    - 50
+    - 0
+    name: o1
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.63
+  o2:
+    center:
+    - 1753.5
+    - 15.0
+    layer:
+    - 50
+    - 0
+    name: o2
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.63
+  o3:
+    center:
+    - 1753.5
+    - 0.0
+    layer:
+    - 50
+    - 0
+    name: o3
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.63
+settings:
+  changed: {}
+  child: null
+  default: {}
+  full: {}
+  function_name: PSR_nominal
+  info: {}
+  info_version: 2
+  module: __main__
+  name: PSR_nominal

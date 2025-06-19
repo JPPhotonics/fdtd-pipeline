@@ -1,0 +1,19 @@
+name: fdtd_sim
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - scipy
+  - numpy
+  - matplotlib
+  - h5py
+  - pandas
+  - ipykernel
+  - pip
+  - black
+  - pip:
+    - tidy3d
+    - gdsfactory==7.8.*
+    - klayout
+    - gplugins[lumerical,tidy3d]
+    - pyspice

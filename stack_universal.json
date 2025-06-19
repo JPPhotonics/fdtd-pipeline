@@ -1,0 +1,11 @@
+{
+    "min_feat_size": 0.14,
+
+    "Si_layer": [1,0],
+    "Si_thickness": 0.22,
+    "Si_clad_thickness": 0.15,
+
+    "SLAB_layer": [2,0],
+    "SLAB_thickness": 0.15,
+    "SLAB_clad_thickness": 0.15
+}
