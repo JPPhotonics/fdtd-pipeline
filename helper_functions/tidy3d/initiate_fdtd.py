@@ -107,6 +107,11 @@ def fdtd_from_gds(parameters):
         y_min = min(y_min, y - w)
         y_max = max(y_max, y + w)
     
+    if y_max < device.ymax:
+        y_max = device.ymax
+    if y_min > device.ymin:
+        y_min = device.ymin
+    
     if x_min == x_max: # like a 180-degree bend, U-shape
         x_min = ports['o1'].center[0]
         x_max = device.xmax
@@ -243,7 +248,7 @@ def fdtd_from_gds(parameters):
         (solver_y_max-solver_y_min)*um,
         (solver_z_max-solver_z_min)*um,
     )
-    sim_time = 16.0*(solver_x_max-solver_x_min)*um*2.0/td.C_0
+    sim_time = 15.0*(solver_x_max-solver_x_min)*um*2.0/td.C_0
 
     sim = td.Simulation(
         size = sim_size,
@@ -259,6 +264,7 @@ def fdtd_from_gds(parameters):
         run_time=sim_time,
         boundary_spec=td.BoundarySpec.all_sides(boundary=td.Absorber()), # absorber or PML
         medium = mat_OX,
+        subpixel=td.SubpixelSpec(dielectric=td.ContourPathAveraging()),
     )
 
     job = web.Job(simulation=sim, task_name=task_name, verbose=True)

@@ -43,12 +43,16 @@ def fit_pole_residue_material(filename: str,
         wvl_um = np.array(mat['wavelength(m)'])*1e6
         n_data = np.array(mat[n_name])
         k_data = np.array(mat[k_name])
+
+        print(f"Loaded {len(wvl_um)} data points")
         
         # Pole residue fitting
         fitter = FastDispersionFitter(wvl_um=wvl_um,
                                       n_data=n_data,
                                       k_data=k_data,
                                       wvl_range=wav_range,)
+        
+        print(f"Fitting {material_name} with {len(wvl_um)} data points")
         
         if web_service:
             logger.info('Starting web service fitting')
@@ -58,16 +62,17 @@ def fit_pole_residue_material(filename: str,
                 advanced_param = AdvancedFitterParam(nlopt_maxeval=5000),
             )
         else:
+            print('Starting local fitting')
             advanced_param = AdvancedFastFitterParam(weights=(1,1))
-            logger.info('Starting local fitting')
 
+            print('Starting fitting...')
             medium, rms_error = fitter.fit(
-                max_num_poles=1, 
+                max_num_poles=6, 
                 advanced_param=advanced_param, 
-                tolerance_rms=2e-2
+                tolerance_rms=1e-5
             )
 
-        logger.info(f"RMS error: {rms_error:.6f}")    
+        print(f"RMS error: {rms_error:.6f}")    
 
         fitter.plot(medium)
         plt.xlabel('wavelength (um)')
@@ -112,10 +117,10 @@ if __name__ == "__main__":
     sys.path.append(current_directory)
     
     # filename = r'materials_library\VisPDK_materials_mid_SiN.json'
-    filename = r'materials_library\universal_SiN - Copy.json'
+    filename = r'materials_library\universal_Si.json'
     n_name = 'Re(index)'
     k_name = 'Im(index)'
-    material_name = 'SiN'
+    material_name = 'Si'
     output_file = r'materials_library\test.json'
     
     fit_pole_residue_material(
@@ -123,6 +128,6 @@ if __name__ == "__main__":
         n_name=n_name, k_name=k_name, 
         material_name=material_name, 
         output_file=output_file,
-        wav_range=(0.7, 1.5),
+        wav_range=(0.6, 2.0),
         web_service=False,
         )

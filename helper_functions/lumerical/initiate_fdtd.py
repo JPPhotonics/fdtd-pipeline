@@ -148,6 +148,11 @@ def fdtd_from_gds(parameters: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         if ports[port_name].center[1] + ports[port_name].width > y_max:
             y_max = ports[port_name].center[1] + ports[port_name].width
     
+    if y_max < device.ymax:
+        y_max = device.ymax
+    if y_min > device.ymin:
+        y_min = device.ymin
+
     if x_min == x_max: # like a 180-degree bend, U-shape
         x_min = ports['o1'].center[0]
         x_max = device.xmax

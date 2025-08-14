@@ -1,0 +1,1181 @@
+cells:
+  bend_euler_bfe3acbc:
+    changed:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+    child: null
+    default:
+      add_bbox: null
+      add_pins: true
+      angle: 90.0
+      cross_section: xs_sc
+      direction: ccw
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: null
+      width: null
+      with_arc_floorplan: true
+    full:
+      add_bbox: null
+      add_pins: true
+      angle: 90.0
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      direction: ccw
+      layer: null
+      npoints: null
+      p: 0.5
+      radius: null
+      width: null
+      with_arc_floorplan: true
+    function_name: bend_euler
+    info:
+      dy: 10.0
+      length: 16.637
+      radius: 10.0
+      radius_min: 7.061
+      route_info:
+        length: 16.637
+        n_bend_90: 1.0
+        type: xs_sc
+        weight: 16.637
+        xs_sc_length: 16.637
+      width: 0.5
+    info_version: 2
+    module: gdsfactory.components.bend_euler
+    name: bend_euler_bfe3acbc
+  coupler90_66dac1bb:
+    changed:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      cross_section_bend:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+    child: null
+    default:
+      bend:
+        function: bend_euler
+      cross_section: xs_sc
+      cross_section_bend: null
+      gap: 0.2
+      radius: 10.0
+      straight:
+        function: straight
+    full:
+      bend:
+        function: bend_euler
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      cross_section_bend:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      gap: 0.2
+      radius: 10.0
+      straight:
+        function: straight
+    function_name: coupler90
+    info: {}
+    info_version: 2
+    module: gdsfactory.components.coupler90
+    name: coupler90_66dac1bb
+  coupler_ring_926e949d:
+    changed:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      radius: 10.0
+    child: null
+    default:
+      add_bbox: null
+      bend:
+        function: bend_euler
+      coupler90:
+        function: coupler90
+      coupler_straight:
+        function: coupler_straight
+      cross_section: xs_sc
+      cross_section_bend: null
+      gap: 0.2
+      length_extension: 3
+      length_x: 4.0
+      radius: 5.0
+    full:
+      add_bbox: null
+      bend:
+        function: bend_euler
+      coupler90:
+        function: coupler90
+      coupler_straight:
+        function: coupler_straight
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      cross_section_bend: null
+      gap: 0.2
+      length_extension: 3
+      length_x: 4.0
+      radius: 10.0
+    function_name: coupler_ring
+    info: {}
+    info_version: 2
+    module: gdsfactory.components.coupler_ring
+    name: coupler_ring_926e949d
+  coupler_straight_b2c15fae:
+    changed:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      gap: 0.2
+      length: 4.0
+    child: null
+    default:
+      cross_section: xs_sc_no_pins
+      gap: 0.27
+      length: 10.0
+      straight:
+        function: straight
+    full:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      gap: 0.2
+      length: 4.0
+      straight:
+        function: straight
+    function_name: coupler_straight
+    info: {}
+    info_version: 2
+    module: gdsfactory.components.coupler_straight
+    name: coupler_straight_b2c15fae
+  ring_single:
+    changed: {}
+    child: null
+    default:
+      bend:
+        function: bend_euler
+      bend_coupler:
+        function: bend_euler
+      coupler_ring:
+        function: coupler_ring
+      cross_section: xs_sc
+      gap: 0.2
+      length_x: 4.0
+      length_y: 0.6
+      pass_cross_section_to_bend: true
+      radius: 10.0
+      straight:
+        function: straight
+    full:
+      bend:
+        function: bend_euler
+      bend_coupler:
+        function: bend_euler
+      coupler_ring:
+        function: coupler_ring
+      cross_section: xs_sc
+      gap: 0.2
+      length_x: 4.0
+      length_y: 0.6
+      pass_cross_section_to_bend: true
+      radius: 10.0
+      straight:
+        function: straight
+    function_name: ring_single
+    info: {}
+    info_version: 2
+    module: gdsfactory.components.ring_single
+    name: ring_single
+  straight_29bc6cef:
+    changed:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      length: 3
+    child: null
+    default:
+      add_bbox: null
+      add_pins: true
+      cross_section: xs_sc
+      layer: null
+      length: 10.0
+      npoints: 2
+      width: null
+    full:
+      add_bbox: null
+      add_pins: true
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      layer: null
+      length: 3
+      npoints: 2
+      width: null
+    function_name: straight
+    info:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      length: 3
+      route_info:
+        length: 3
+        type: xs_sc
+        weight: 3
+        xs_sc_length: 3
+      width: 0.5
+    info_version: 2
+    module: gdsfactory.components.straight
+    name: straight_29bc6cef
+  straight_363bf031:
+    changed:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      length: 0.6
+    child: null
+    default:
+      add_bbox: null
+      add_pins: true
+      cross_section: xs_sc
+      layer: null
+      length: 10.0
+      npoints: 2
+      width: null
+    full:
+      add_bbox: null
+      add_pins: true
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      layer: null
+      length: 0.6
+      npoints: 2
+      width: null
+    function_name: straight
+    info:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      length: 0.6
+      route_info:
+        length: 0.6
+        type: xs_sc
+        weight: 0.6
+        xs_sc_length: 0.6
+      width: 0.5
+    info_version: 2
+    module: gdsfactory.components.straight
+    name: straight_363bf031
+  straight_41641a79:
+    changed:
+      add_pins: false
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      length: 4.0
+    child: null
+    default:
+      add_bbox: null
+      add_pins: true
+      cross_section: xs_sc
+      layer: null
+      length: 10.0
+      npoints: 2
+      width: null
+    full:
+      add_bbox: null
+      add_pins: false
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      layer: null
+      length: 4.0
+      npoints: 2
+      width: null
+    function_name: straight
+    info:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      length: 4.0
+      route_info:
+        length: 4.0
+        type: xs_sc
+        weight: 4.0
+        xs_sc_length: 4.0
+      width: 0.5
+    info_version: 2
+    module: gdsfactory.components.straight
+    name: straight_41641a79
+  straight_aa8152ae:
+    changed:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      length: 4.0
+    child: null
+    default:
+      add_bbox: null
+      add_pins: true
+      cross_section: xs_sc
+      layer: null
+      length: 10.0
+      npoints: 2
+      width: null
+    full:
+      add_bbox: null
+      add_pins: true
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      layer: null
+      length: 4.0
+      npoints: 2
+      width: null
+    function_name: straight
+    info:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      length: 4.0
+      route_info:
+        length: 4.0
+        type: xs_sc
+        weight: 4.0
+        xs_sc_length: 4.0
+      width: 0.5
+    info_version: 2
+    module: gdsfactory.components.straight
+    name: straight_aa8152ae
+  straight_bfe3acbc:
+    changed:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+    child: null
+    default:
+      add_bbox: null
+      add_pins: true
+      cross_section: xs_sc
+      layer: null
+      length: 10.0
+      npoints: 2
+      width: null
+    full:
+      add_bbox: null
+      add_pins: true
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      layer: null
+      length: 10.0
+      npoints: 2
+      width: null
+    function_name: straight
+    info:
+      cross_section:
+        add_pins_function_module: gdsfactory.add_pins
+        add_pins_function_name: null
+        auto_widen: false
+        auto_widen_minimum_length: 200.0
+        bbox_layers: null
+        bbox_offsets: null
+        components_along_path: []
+        end_straight_length: 0.01
+        gap: 3.0
+        info: {}
+        min_length: 0.01
+        radius: 10.0
+        sections:
+        - hidden: false
+          insets: null
+          layer: WG
+          name: _default
+          offset: 0.0
+          offset_function: null
+          port_names:
+          - o1
+          - o2
+          port_types:
+          - optical
+          - optical
+          simplify: null
+          width: 0.5
+          width_function: null
+        start_straight_length: 0.01
+        taper_length: 10.0
+        width_wide: null
+      length: 10.0
+      route_info:
+        length: 10.0
+        type: xs_sc
+        weight: 10.0
+        xs_sc_length: 10.0
+      width: 0.5
+    info_version: 2
+    module: gdsfactory.components.straight
+    name: straight_bfe3acbc
+name: ring_single
+ports:
+  o1:
+    center:
+    - -17.0
+    - 0.0
+    layer:
+    - 1
+    - 0
+    name: o1
+    orientation: 180.0
+    port_type: optical
+    shear_angle: null
+    width: 0.5
+  o2:
+    center:
+    - 13.0
+    - 0.0
+    layer:
+    - 1
+    - 0
+    name: o2
+    orientation: 0.0
+    port_type: optical
+    shear_angle: null
+    width: 0.5
+settings:
+  changed: {}
+  child: null
+  default:
+    bend:
+      function: bend_euler
+    bend_coupler:
+      function: bend_euler
+    coupler_ring:
+      function: coupler_ring
+    cross_section: xs_sc
+    gap: 0.2
+    length_x: 4.0
+    length_y: 0.6
+    pass_cross_section_to_bend: true
+    radius: 10.0
+    straight:
+      function: straight
+  full:
+    bend:
+      function: bend_euler
+    bend_coupler:
+      function: bend_euler
+    coupler_ring:
+      function: coupler_ring
+    cross_section: xs_sc
+    gap: 0.2
+    length_x: 4.0
+    length_y: 0.6
+    pass_cross_section_to_bend: true
+    radius: 10.0
+    straight:
+      function: straight
+  function_name: ring_single
+  info: {}
+  info_version: 2
+  module: gdsfactory.components.ring_single
+  name: ring_single
