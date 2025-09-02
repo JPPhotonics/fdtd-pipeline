@@ -34,6 +34,7 @@ def simulate_predefined_gds(parameters: Dict[str, Any]) -> Optional[Dict[str, An
             - flag_extend: Whether to extend waveguides from ports
             - extension: Extension length in micrometers
             - flag_run_simulation: Whether to run the simulation
+            - flag_cloud: Whether to use cloud-based simulation
             - flag_boolean: Whether to apply boolean operations
             - solver_z_min/max: Simulation region z bounds
             - change_cladding: Whether to change top cladding to Si3N4
@@ -64,6 +65,7 @@ def simulate_predefined_gds(parameters: Dict[str, Any]) -> Optional[Dict[str, An
         flag_extend = 1,    # extend waveguide?
         extension = 10,     # extension length (um)
         flag_run_simulation = 0,    # run simulation?
+        flag_cloud = 1,             # use cloud-based simulation?
         flag_boolean = 0,           # apply boolean operation?
         solver_z_min = -1,          # simulation region z min (um)
         solver_z_max = 1,           # simulation region z max (um)

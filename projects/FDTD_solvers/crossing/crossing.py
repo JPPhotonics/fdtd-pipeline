@@ -21,6 +21,7 @@ span = 20     # wavelength span (nm)
 um = 0.001    # convert nanometer to micrometer
 mode_idx = 0  # index of the injected mode, Lumerical starts with 1, Tidy3D starts with 0
 flag_run_simulation = 1 # Run simulation?
+flag_cloud = 1      # use cloud-based simulation in Lumerical?
 
 # define file paths and simulation parameters
 # path to GDS file ready for simulation
@@ -54,6 +55,8 @@ p = dict(
     flag_run_simulation = flag_run_simulation,
     # Control the top cladding: False, keep SiO2; True, change to Si3N4.
     change_cladding = False,
+    # use cloud-based simulation in Lumerical?
+    flag_cloud = flag_cloud,
 )
 
 # Run the simulation using the selected solver

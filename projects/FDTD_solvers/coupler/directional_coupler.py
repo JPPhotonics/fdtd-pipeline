@@ -30,15 +30,16 @@ def main():
     """Main simulation function for directional coupler."""
     
     # Select simulation solver: 'lumerical' or 'tidy3d'
-    # solver = 'lumerical'
-    solver = 'tidy3d'
+    solver = 'lumerical'
+    # solver = 'tidy3d'
 
     # Define simulation parameters
-    res = 25         # simulation resolution, number of cells per wavelength
+    res = 6         # simulation resolution, number of cells per wavelength
     span = 20         # wavelength span (nm)
     um = 0.001        # convert nanometer to micrometer
     mode_idx = 0      # index of the injected mode, Lumerical starts with 1, Tidy3D starts with 0
-    flag_run_simulation = 0  # Run simulation?
+    flag_run_simulation = 1  # Run simulation?
+    flag_cloud = 1              # use cloud-based simulation in Lumerical?
 
     # Define file paths and simulation parameters
     # Path to GDS file ready for simulation
@@ -50,7 +51,7 @@ def main():
     # Path to output file
     output_dir = os.path.join(
         current_directory, 'projects', 'FDTD_solvers', 'coupler', 'Data', solver,
-        f'new_version/res{res}_span{span}_step5'
+        f'res{res}_span{span}_step5'
     )
     
     # Task name for Tidy3D
@@ -74,6 +75,8 @@ def main():
         flag_run_simulation = flag_run_simulation,
         # Control the top cladding: False, keep SiO2; True, change to Si3N4.
         change_cladding = False,
+        # use cloud-based simulation in Lumerical?
+        flag_cloud = flag_cloud,
     )
 
     logger.info(f"Starting directional coupler simulation with {solver} solver")

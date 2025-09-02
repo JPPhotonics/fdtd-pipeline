@@ -55,6 +55,7 @@ def fdtd_from_gds(parameters: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         solver_z_min = -0.5,
         solver_z_max = 0.7,
         flag_boolean = 0,
+        flag_cloud = 0,
         change_cladding = False,
     )
     
@@ -231,6 +232,11 @@ def fdtd_from_gds(parameters: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     project.set('mode selection', 'user select')
     project.set('selected mode numbers', np.linspace(1, mode_num, num=mode_num))
     project.set('number of field profile samples', round(wav_span/wav_step)+1)
+
+    # Cloud-based simulation does not support frequency dependent profile in version 2025 R2.1
+    # Can be changed to 1 in future versions
+    if flag_cloud:
+        project.set('frequency dependent profile', 0)
     
     # Add output ports
     for port_name in ports:
@@ -258,6 +264,9 @@ def fdtd_from_gds(parameters: Dict[str, Any]) -> Optional[Dict[str, Any]]:
             project.set('selected mode numbers', np.linspace(1, mode_num, num=mode_num))
             project.set('number of field profile samples', round(wav_span/wav_step)+1)
 
+            if flag_cloud:
+                project.set('frequency dependent profile', 0)
+
     # Set input port mode
     project.select('FDTD::ports')
     project.set('source port', 'o1')
@@ -282,8 +291,14 @@ def fdtd_from_gds(parameters: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         try:
             start_time = datetime.now()
             logger.info(f'Simulation started at {start_time.strftime("%H:%M:%S")}')
-
-            project.run()
+            if flag_cloud:
+                # Can change to other queues, please refer to Lumerical documentation
+                burst_setting = dict(
+                    Queue = "A-g6e_48xlarge_noHyperthread-ONDM-BR",
+                )
+                project.run("FDTD", "GPU", "Burst", burst_setting)
+            else:
+                project.run()
 
             end_time = datetime.now()
             logger.info(f'Simulation finished at {end_time.strftime("%H:%M:%S")}')

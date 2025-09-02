@@ -4,7 +4,7 @@
     "temperature": 300,
     "material_type": "universal",
     "guiding_material": "Si",
-    "lumapi_path": "C:/Program Files/Lumerical/v251/api/python",
+    "lumapi_path": "C:/Program Files/Lumerical/v252/api/python",
     "solver_z_min": -2,
     "solver_z_max": 2  
 }
